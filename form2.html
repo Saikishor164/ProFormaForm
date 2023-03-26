@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <title>Registration Form </title>
+    <title>Registration Form 2 </title>
 </head>
 <body>
     <h2 class="toph2">-</h2>
-    <h2 class="text-center">Profoma to be submitted for to establish</h2>
+    <h2 class="text-center">Profoma to be submitted for the establishment</h2>
     <h2 class="text-center">P.A Inamdar Computer Lab </h2>
     <h2 class="text-center">Proforma No.2 </h2>
     <h2 class="toph2">-</h2>
@@ -19,29 +19,45 @@
 
             <div class="col-sm-12 form-group"> 
                 <label for ="radio"><b>Which Type of School it is?</b></label> <br>
-                <label><input type="radio" name="optradio" >Option 1</label> <br>
-                <label><input type="radio" name="optradio">Option 2</label><br>
-                <label><input type="radio" name="optradio" >Option 3</label>
+                <label><input type="radio" name="school" >Primary School</label> <br>
+                <label><input type="radio" name="school">High School</label><br>
+                <label><input type="radio" name="school" >Jr. College</label>
               </div>
 
               <div class="col-sm-12 form-group">
-                <label for="name-f">Which Medium Of Instruction of each school:	</label>
-                <input type="text" class="form-control" name="fname" id="name-f" placeholder="English / Hindi/ Marathi / Urdu" required>
+                <label for="instructionschool">Which Medium Of Instruction of each school:	</label>
+                <input type="text" class="form-control" name="fname" id="instructionschool" placeholder="English / Hindi/ Marathi / Urdu" required>
             </div>
 
             <div class="col-sm-6 form-group">
-                <label for="name-f">Name of the Primary School:	</label>
-                <input type="text" class="form-control" name="fname" id="name-f" placeholder="Name of the Primary School:	" required>
+                <label for="primaryschool">Name of the Primary School:	</label>
+                <input type="text" class="form-control" name="fname" id="primaryschool" placeholder="Name of the Primary School:" required>
+
             </div>
             <div class="col-sm-6 form-group">
-                
-                <label><input type="radio" name="optradio" >Option 1</label> 
-                <label><input type="radio" name="optradio">Option 2</label>
-            </div>
 
+                <label for="type">Type</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="Aided">Aided</option>
+                    <option value="Unaided">Unaided</option>
+                </select>
+<!--                <label><input type="radio" name="aided" >Aided</label>-->
+<!--                <label><input type="radio" name="aided">Unaided</label>-->
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="strength">Class wise total strength of students:</label>
+                <input type="file" class="form-control" name="strength" id="strength" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="teachingstaff">Details of each member of teaching Staff</label>
+                <input type="file" class="form-control" name="teachingstaff" id="teachingstaff" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
+            </div>
     <div class="col-sm-2 form-group">
-        <label for="email">Date</label>
-        <input type="date" class="form-control" name="email" id="email" required>
+        <label for="date">Date</label>
+        <input type="date" class="form-control" name="date" id="date" required>
     </div>
 
 
