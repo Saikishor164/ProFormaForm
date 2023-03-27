@@ -17,7 +17,9 @@
         <form>
 <p style="color:red;"><b>* All the Fields are Required</b></p>
             <div class="row jumbotron">
-
+            <div class="col-sm-12 form-group">
+               <label> Details of Schools & Jr. College run by <input type="text" name="schooljr" id="schooljr" required> Trust </label>
+               </div>
             <div class="col-sm-12 form-group"> 
                 <label for ="radio">Which Type of School it is?</label> <br>
                 <label class="labelthin" ><input type="radio" name="school" >Primary School</label> <br>
@@ -56,6 +58,62 @@
             <div class="col-sm-12 form-group">
                 <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
             </div>
+               
+               <div class="col-sm-6 form-group">
+                <label for="secondaryschool">Name of the Secondary School:	</label>
+                <input type="text" class="form-control" name="fname" id="secondaryschool" placeholder="Name of the Secondary School:" required>
+
+            </div>
+            <div class="col-sm-6 form-group">
+
+                <label for="type">Type</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="Aided">Aided</option>
+                    <option value="Unaided">Unaided</option>
+                </select>
+<!--                <label><input type="radio" name="aided" >Aided</label>-->
+<!--                <label><input type="radio" name="aided">Unaided</label>-->
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="strengthsec">Class wise total strength of students:</label>
+                <input type="file" class="form-control" name="strength" id="strengthsec" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="teachingstaffsec">Details of each member of teaching Staff</label>
+                <input type="file" class="form-control" name="teachingstaffsec" id="teachingstaffsec" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
+            </div>
+               
+               <div class="col-sm-6 form-group">
+                <label for="jrschool">Name of the Junior School:	</label>
+                <input type="text" class="form-control" name="fname" id="jrschool" placeholder="Name of the Junior School:" required>
+
+            </div>
+            <div class="col-sm-6 form-group">
+
+                <label for="type">Type</label>
+                <select class="form-control custom-select browser-default">
+                    <option value="Aided">Aided</option>
+                    <option value="Unaided">Unaided</option>
+                </select>
+<!--                <label><input type="radio" name="aided" >Aided</label>-->
+<!--                <label><input type="radio" name="aided">Unaided</label>-->
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="strengthjr">Class wise total strength of students:</label>
+                <input type="file" class="form-control" name="strengthjr" id="strengthjr" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="teachingstaffjr">Details of each member of teaching Staff</label>
+                <input type="file" class="form-control" name="teachingstaffjr" id="teachingstaffjr" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
+            </div>
+               
+               
     <div class="col-sm-2 form-group">
         <label for="date">Date</label>
         <input type="date" class="form-control" name="date" id="date" required>
