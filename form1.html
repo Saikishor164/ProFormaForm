@@ -29,12 +29,14 @@
                 <label for="name-f">Full Address:</label>
                 <input type="text" class="form-control" name="fname" id="name-f" placeholder="Enter your Education full Address" required>
             </div>
-            <div class="col-sm-12 form-group"> <br>
+            <div class="col-sm-8 form-group"> 
                 <label for="location">Location:</label>
                 <input type="text" id="location" class="form-control" name="location" readonly>
-                <button class="btn btn-success" type="button" onclick="getLocation()">Get location</button>
             </div>
+            <div class="col-sm-2 form-group"><br>
+                <button  style="margin-top:10px;" class="btn btn-success" type="button" onclick="getLocation()">Get location</button>
 
+            </div>
             <div class="col-sm-6 form-group">
                 <label for="pass">Contact No. </label>
                 <input type="phone" name="phone" class="form-control" id="pass" placeholder="XXXXXXXXXX" minlength="10" maxlength="10" pattern="[1-9]{10}" required>
