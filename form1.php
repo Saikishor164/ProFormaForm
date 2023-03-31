@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< Updated upstream
 $form1ID = $_POST['form1ID'];
+=======
+// $form1ID = $_POST['form1ID'];
+>>>>>>> Stashed changes
 
 $educationalname = $_POST['educationalname'];
 $educationaladdress = $_POST['educationaladdress'];
@@ -86,4 +90,8 @@ if($conn -> connect_error){
     $stmt->close();
     $conn->close();
 }
+<<<<<<< Updated upstream
 ?> -->
+=======
+?> -->
+>>>>>>> Stashed changes
