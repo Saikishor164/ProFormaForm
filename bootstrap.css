@@ -1827,6 +1827,75 @@ select.form-control:focus::-ms-value {
   display: block;
   width: 100%;
 }
+
+.form-controltt {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  padding-left: 0.375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-controltt {
+    transition: none;
+  }
+}
+.form-controltt::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-controltt:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.form-controltt::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controltt::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controltt:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controltt::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controltt::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controltt:disabled,
+.form-controltt[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+select.form-controltt:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}
+.form-controltt-file,
+.form-controltt-range {
+  display: block;
+  width: 100%;
+}
+
+
 .col-form-label {
   padding-top: calc(0.375rem + 1px);
   padding-bottom: calc(0.375rem + 1px);

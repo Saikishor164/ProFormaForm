@@ -47,14 +47,74 @@
                 <input type="text" class="form-control" name="electricity" id="electricity" placeholder="Yes / no" required>
             </div>
             <div class="col-sm-12 form-group">
-                <label for="usbbattery">Whether USB battery backup is available: </label>
+                <label for="usbbattery">Whether UPS battery backup is available: </label>
                 <input type="text" class="form-control" name="usbbattery" id="usbbattery" placeholder="Yes / no" required>
             </div>
             <div class="col-sm-12 form-group">
                 <label for="electricity">If yes what capacity, make etc</label>
                 <input type="text" class="form-control" name="electricity" id="electricity" placeholder="capacity, etc" required>
             </div>
+            <div class="col-sm-12 form-group">
+                <label for="compteach">How many periods class wise are called for computer Teaching in school time table?</label>
+                <input type="text" class="form-control" name="compteachtable" id="compteach" placeholder="Computer Teaching in School Time Table " required>
+                </div>
+                <div class="col-sm-4 form-group">
+                    <label for="copyoftable">Copy of Time Table To be Enclosed:</label>
 
+                
+            </div>
+            <div class="col-sm-8 form-group">    
+                <input type="file" class="form-controltt" name="copyoftimetable" id="copyoftable" placeholder="(Copy of Time Table To Be E)" required>
+
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="radio">Whether separate computer qualified instructor has been appointed? </label>
+                <!-- <input type="text" class="form-control" name="compteachtable" id="compteach" placeholder="Computer Teaching in School Time Table " required> -->
+                <input type="radio" name="yesno" value="yes" >Yes</label> 
+                 <input type="radio"  name="yesno" value="no">No</label>
+                
+                </div>
+                <div class="col-sm-8 form-group">
+                    <label for="course">if yes his/her full computer course related qualification such 
+                        <select class="form-group" name="compcourse" id="course">
+                            <option value="mscit"> MS-CIT  </option>
+                            <option value="ccc"> CCC </option>
+                        </select>                                                       
+                        Exam Pass
+                    </label>
+
+                </div>
+                <!-- <div class="col-sm-2 form-group">
+                </div> -->
+                <div class="col-sm-2 form-group">
+                  
+                    <select  name="examass" id="expa"><option>DCA</option><option>BCA</option><option>B.Sc computer Science</option></select>
+                </div>
+
+                <div class="col-sm-12 form-group">
+                    <label for="equival">Equivalentto to it :</label>
+                  <input type="text" class="form-control" name="equivalentto" id="equival" placeholder="Equivalentto to it" required>
+                </div>
+               <br>
+               <div class="col-sm-12 form-group">
+                <label for="techavailable">If qualification computer teacher is not available  the what arrangement is proposed?: </label>
+                <input type="text" class="form-control" name="teacherisnotavailable" id="techavailable" placeholder="If qualification computer teacher is not available  the what arrangement is proposed" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="complab">whether separate Hall for computer Lab is available? : </label>
+                <input type="text" class="form-control" name="hallforcomputerlab" id="complab" placeholder="whether separate Hall for computer Lab is available" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for="sizeofhall">if yes size of the Hall : </label>
+                <input type="text" class="form-control" name="sizeofhall" id="sizeofhall" placeholder="if yes size of the Hall" required>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label for=" hallsecured">On which floor whether the Hall is fully secured? : </label>
+                <input type="text" class="form-control" name="hallsecured" id="hallsecured" placeholder="On which floor whether the Hall is fully secured" required>
+            </div>
+            
+          
+                <br>
             <div class="col-sm-12 form-group mb-0">
                 <button class="btn btn-success">Submit</button>
             </div>
