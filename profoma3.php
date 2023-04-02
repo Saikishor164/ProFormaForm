@@ -51,7 +51,7 @@
             </td>
             <td>
               <br>
-            <input type="text" placeholder="Whether School has Computer Lab"name="computerlab"   required size="50">
+            <input type="text" placeholder="Whether School has Computer Lab" name="computerlab"   required size="50">
             </td>
           </tr>
           <tr>
