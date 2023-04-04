@@ -23,18 +23,17 @@
         <div class="row jumbotron">
 
             <!-- Educational Trust: -->
-            <div class="col-sm-12 form-group">
+            <!-- <div class="col-sm-12 form-group">
                 <label for="educationalname">Name of the Educational Trust:</label>
                 <input type="text" class="form-control" name="educationalname" id="educationalname" placeholder="Enter your Educational Trust name." required>
-            </div>
+            </div> -->
             <div class="col-sm-12 form-group">
-                <label for="educationaladdress">Full Address:</label>
-                <input type="text" class="form-control" name="educationaladdress" id="educationaladdress" placeholder="Enter your Education full Address" required>
-
+               
+                    <fieldset required>
                     <label for="eduname">Name of the Educational Trust:</label>
 
-                    <select class="form-control" name="educationalname" id="eduname">
-                     <option> Select Any One</option>
+                    <select class="form-control" name="educationalname" id="eduname" required>
+                     <option value=""> Select Any One</option>
 <!--                    A -->
                      <option value="1">A.P.J. Abdul Kalam Centrey</option>
                     <option value="2">Adhya Educational Society</option> 
@@ -222,7 +221,7 @@
          
                                <label for="edunameother">Others:</label>
              <input type="text" class="form-control" name="educationalnameothere" id="edunameother" placeholder="Enter your Educational Trust name." >
-
+            </fieldset>
             </div>
             <div class="col-sm-8 form-group">
                 <label for="eduaddress">Full Address:</label>
