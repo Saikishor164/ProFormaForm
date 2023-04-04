@@ -47,12 +47,12 @@
                 <input type="text" class="form-control" name="electricity" id="electricity" placeholder="Yes / no" required>
             </div>
             <div class="col-sm-12 form-group">
-                <label for="usbbattery">Whether UPS battery backup is available: </label>
-                <input type="text" class="form-control" name="usbbattery" id="usbbattery" placeholder="Yes / no" required>
+                <label for="upsbattery">Whether UPS battery backup is available: </label>
+                <input type="text" class="form-control" name="upsbattery" id="upsbattery" placeholder="Yes / no" required>
             </div>
             <div class="col-sm-12 form-group">
-                <label for="electricity">If yes what capacity, make etc</label>
-                <input type="text" class="form-control" name="electricity" id="electricity" placeholder="capacity, etc" required>
+                <label for="upscapacity">If yes what capacity, make etc</label>
+                <input type="text" class="form-control" name="upscapacity" id="upscapacity" placeholder="capacity, etc" required>
             </div>
             <div class="col-sm-12 form-group">
                 <label for="compteach">How many periods class wise are called for computer Teaching in school time table?</label>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-sm-8 form-group">
                     <label for="course">if yes his/her full computer course related qualification such 
-                        <select class="form-group" name="compcourse" id="course">
+                        <select class="form-group" name="compcourse" id="course" required>
                             <option value="mscit"> MS-CIT  </option>
                             <option value="ccc"> CCC </option>
                         </select>                                                       
@@ -88,7 +88,7 @@
                 </div> -->
                 <div class="col-sm-2 form-group">
                   
-                    <select  name="examass" id="expa"><option>DCA</option><option>BCA</option><option>B.Sc computer Science</option></select>
+                    <select  name="exampass" id="expa"><option value="dca">DCA</option><option value="bca">BCA</option><option value="bsc">B.Sc computer Science</option></select>
                 </div>
 
                 <div class="col-sm-12 form-group">
@@ -111,6 +111,11 @@
             <div class="col-sm-12 form-group">
                 <label for=" hallsecured">On which floor whether the Hall is fully secured? : </label>
                 <input type="text" class="form-control" name="hallsecured" id="hallsecured" placeholder="On which floor whether the Hall is fully secured" required>
+            </div>
+
+            <div class="col-sm-2 form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" name="date" id="date" required>
             </div>
             
           
