@@ -1,6 +1,6 @@
 <?php
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+
     // Get form data
     $schooljr = $_POST["schooljr"];
     $school = $_POST["school"];
@@ -19,30 +19,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $jrteachingstaff = $_POST["jrteachingstaff"];
     $date = $_POST["date"];
 
-    echo  "('$schooljr',' $school', '$Instructionname', '$primaryname',' $adid',' $strength',
-    '$teachingstaff',' $secondaryschool',' $adid2',' $secstrength',' $secteachingstaffsec',
-    '$jrschool',' $adid3',' $jrstrength',' $jrteachingstaff',' $date)";
+   // echo "$schooljr.' - '.$school' - '.$Instructionname' - '.$primaryname' - '.$adid' - '.$strength' - '.$teachingstaff' - '.$secondaryschool' - '.$adid2' - '.$secstrength' - '.$secteachingstaffsec' - '.$jrschool' - '.$adid3' - '.$jrstrength' - '.$jrteachingstaff' - '.$date" ;
 
-    // Validate form data
-    $errors = array();
-    if(empty($name)) {
-        //$errors["name"] = "Please enter your name";
-    }
-    if(empty($email)) {
-        //$errors["email"] = "Please enter your email address";
-    } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        //$errors["email"] = "Invalid email address";
-    }
-    if(empty($password)) {
-        //$errors["password"] = "Please enter a password";
-    } elseif(strlen($password) < 8) {
-        //$errors["password"] = "Password must be at least 8 characters long";
-    }
-    if(empty($confirm_password)) {
-        //$errors["confirm_password"] = "Please confirm your password";
-    } elseif($password != $confirm_password) {
-        //$errors["confirm_password"] = "Passwords do not match";
-    }
+    
+
+    // // Validate form data
+    // $errors = array();
+    // if(empty($name)) {
+    //     //$errors["name"] = "Please enter your name";
+    // }
+    // if(empty($email)) {
+    //     //$errors["email"] = "Please enter your email address";
+    // } elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //     //$errors["email"] = "Invalid email address";
+    // }
+    // if(empty($password)) {
+    //     //$errors["password"] = "Please enter a password";
+    // } elseif(strlen($password) < 8) {
+    //     //$errors["password"] = "Password must be at least 8 characters long";
+    // }
+    // if(empty($confirm_password)) {
+    //     //$errors["confirm_password"] = "Please confirm your password";
+    // } elseif($password != $confirm_password) {
+    //     //$errors["confirm_password"] = "Passwords do not match";
+    // }
 
     // If there are no errors, insert user data into database
     if(empty($errors)) {
@@ -59,15 +59,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Insert data into database
-        $sql = "INSERT INTO pofoma2 (schooljr, school, Instructionname, primaryname, adid, strength, teachingstaff, 
-        secondaryschool, adid2, secstrength, secteachingstaffsec, jrschool, adid3, jrstrength, 
-        jrteachingstaff, date)
+        $sql = "INSERT INTO pofoma2 (`schooljr`, `school`, `Instructionname`, `primaryname`, `adid`, `strength`, `teachingstaff`, `secondaryschool`, `adid2`, `secstrength`, `secteachingstaffsec`, `jrschool`, `adid3`, `jrstrength`, `jrteachingstaff`, `date`)
                 VALUES ('$schooljr',' $school', '$Instructionname', '$primaryname',' $adid',' $strength',
                 '$teachingstaff',' $secondaryschool',' $adid2',' $secstrength',' $secteachingstaffsec',
-                '$jrschool',' $adid3',' $jrstrength',' '$jrteachingstaff',' $date)";
+                '$jrschool',' $adid3',' $jrstrength',' $jrteachingstaff',' $date')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Registration successful";
+            header("Location: form3.html");
+            exit;
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -79,6 +78,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<p>$error</p>";
         }
     }
-}
+
 
 ?>
