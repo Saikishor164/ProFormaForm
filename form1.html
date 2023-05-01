@@ -17,8 +17,9 @@
     <h2 class="text-center">Proforma No.1 </h2>
     <h2 class="toph2">-</h2>
     <div class="container">
-        <p style="color:red;"><b>* All the Fields are Required</b></p>
-        <form id="form1" action="form1.php" method="post">
+        <p style="color:rgb(255, 0, 0);"><b>* All the Fields are Required</b></p>
+        <!-- <form id="form1" action="form1.php" method="post"> -->
+            <form id="form1" action="form1.php" method="post">
 
         <div class="row jumbotron">
 
@@ -33,7 +34,7 @@
                     <label for="eduname">Name of the Educational Trust:</label>
 
                     <select class="form-control" name="Dedutrustname" id="eduname" required>
-                     <option value=""> Select Any One</option>
+                     <option value="anyOne"> Select Any One</option>
 <!--                    A -->
                      <option value="1">A.P.J. Abdul Kalam Centrey</option>
                     <option value="2">Adhya Educational Society</option> 
@@ -223,11 +224,11 @@
              <input type="text" class="form-control" name="educationalname" id="edunameother" placeholder="Enter your Educational Trust name." >
             </fieldset>
             </div>
-            <div class="col-sm-8 form-group">
+            <div class="col-sm-12 form-group">
                 <label for="eduaddress">Full Address:</label>
                 <input type="text" class="form-control" name="educationaladdress" id="eduaddress" placeholder="Enter your Education full Address" required>
             </div>
-            <div class="col-sm-8 form-group"> 
+            <div class="col-sm-10 form-group"> 
                 <label for="location">Location:</label>
                 <input type="text" id="location" class="form-control" name="location" readonly>
             </div>
@@ -235,20 +236,21 @@
                 <button  style="margin-top:10px;" class="btn btn-success" type="button" onclick="getLocation()">Get location</button>
 
             </div>
-            <div class="col-sm-6 form-group">
-                <label for="educationalcontact">Contact No. </label>
+            <!-- <div class="col-sm-6 form-group">
+                <label for="educationalcontact">Mobile No.1 </label>
                 <input type="phone" name="educationalcontact" class="form-control" id="educationalcontact" placeholder="XXXXXXXXXX" minlength="10" maxlength="10" pattern="[1-9]{10}" required>
             </div>
             <div class="col-sm-6 form-group">
-                <label for="educationalmobile">Mobile No. </label>
+                <label for="educationalmobile">Mobile No.2 </label>
                 <input type="educationalmobile" name="cnf-phone" class="form-control" id="educationalmobile" placeholder="XXXXXXXXXX" minlength="10" maxlength="10" required>
             </div>
             <div class="col-sm-12 form-group">
                 <label for="educationalemail">Email</label>
-                <input type="email" class="form-control" name="educationalemail" id="educationalemail" placeholder="Enter your email of education Trust" required>
+                <input type="email" class="form-control" name="educationalemail" id="educationalemail" placeholder="Enter your email of education Trust" required> -->
+            <div class="col-sm-6 form-group">
 
-                <label for="educontact">Mobile No.1 </label>
-                <input type="phone" name="educationalcontact" class="form-control" id="educontact" placeholder="XXXXXXXXXX" minlength="10" maxlength="10" pattern="[1-9]{10}" required>
+                <label for="educontact">Contact No. </label>
+                <input type="phone" name="educationalcontact" class="form-control" id="educontact" placeholder="XXXXXXXXX" minlength="10" maxlength="10" required>
             </div>
             <div class="col-sm-6 form-group">
                 <label for="edumobile">Mobile No.2 </label>
@@ -276,8 +278,8 @@
             <div class="col-sm-12 form-group">
                 <label for="presidentemail">Email</label>
                 <input type="email" class="form-control" name="presidentemail" id="presidentemail" placeholder="Enter your email of president/Chairman" required>
-
-                <label for="prename">Name of the President/Chairman:</label>
+</div>
+                <!-- <label for="prename">Name of the President/Chairman:</label>
                 <input type="text" class="form-control" name="presidentname" id="prename" placeholder="Enter your president/Chairman " required>
             </div>
             <div class="col-sm-6 form-group">
@@ -291,7 +293,7 @@
             <div class="col-sm-12 form-group">
                 <label for="preemail">Email</label>
                 <input type="email" class="form-control" name="presidentemail" id="preemail" placeholder="Enter your email of president/Chairman" required>
-            </div>
+            </div> -->
             <!-- President/Chairman: -->
 
 <br><br>
@@ -311,8 +313,8 @@
             <div class="col-sm-12 form-group">
                 <label for="secretaryemail">Email</label>
                 <input type="email" class="form-control" name="secretaryemail" id="secretaryemail" placeholder="Enter your email of Hon.Secretary:" required>
-
-                <label for="secrname">Name of the Hon.Secretary:</label>
+</div>
+                <!-- <label for="secrname">Name of the Hon.Secretary:</label>
                 <input type="text" class="form-control" name="secretaryname" id="secrname" placeholder="Enter your Hon.Secretary: " required>
             </div>
             <div class="col-sm-6 form-group">
@@ -326,7 +328,7 @@
             <div class="col-sm-12 form-group">
                 <label for="secremail">Email</label>
                 <input type="email" class="form-control" name="secretaryemail" id="secremail" placeholder="Enter your email of Hon.Secretary:" required>
-            </div>
+            </div> -->
             <!-- Hon.Secretary: -->
 <br><br>
             <!-- Coordinator Wiht PAI-ICT Academy Pune-->
@@ -345,8 +347,8 @@
             <div class="col-sm-12 form-group">
                 <label for="coordinatoremail">Email</label>
                 <input type="email" class="form-control" name="coordinatoremail" id="coordinatoremail" placeholder="Enter your Coordinator With PAI-ICT Academy Pune" required>
-
-                <label for="coorname">Name of the Coordinator With PAI-ICT Academy Pune</label>
+</div>
+                <!-- <label for="coorname">Name of the Coordinator With PAI-ICT Academy Pune</label>
                 <input type="text" class="form-control" name="coordinatorname" id="coorname" placeholder="Enter your Coordinator Wiht PAI-ICT Academy Pune " required>
             </div>
             <div class="col-sm-6 form-group">
@@ -360,7 +362,7 @@
             <div class="col-sm-12 form-group">
                 <label for="cooremail">Email</label>
                 <input type="email" class="form-control" name="coordinatoremail" id="cooremail" placeholder="Enter your Coordinator Wiht PAI-ICT Academy Pune" required>
-            </div>
+            </div> -->
             <!-- Coordinator With PAI-ICT Academy Pune -->
 <br> <hr>
 
@@ -423,10 +425,74 @@
                 <label for="date">Date</label>
                 <input type="date" class="form-control" name="date" id="date" required>
             </div>
+            <!---------Captcha Starts Here---------->
+<br>
+            <li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName">
+                Captcha
+            </label>
+
+                <script type="text/javascript">
+
+   //Created / Generates the captcha function
+    function DrawCaptcha()
+    {
+        var a = Math.ceil(Math.random() * 10)+ '';
+        var b = Math.ceil(Math.random() * 10)+ '';
+        var c = Math.ceil(Math.random() * 10)+ '';
+        var d = Math.ceil(Math.random() * 10)+ '';
+        var e = Math.ceil(Math.random() * 10)+ '';
+        var f = Math.ceil(Math.random() * 10)+ '';
+        var g = Math.ceil(Math.random() * 10)+ '';
+        var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e + ' '+ f + ' ' + g;
+        document.getElementById("txtCaptcha").value = code
+    }
+
+    // Validate the Entered input aganist the generated security code function
+    function ValidCaptcha(){
+        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+        var str2 = removeSpaces(document.getElementById('txtInput').value);
+        if (str1 == str2) {
+        	document.getElementById("submit").disabled = false;
+        	return true;
+        	}
+        return false;
+
+    }
+
+    // Remove the spaces from the entered and generated code
+    function removeSpaces(string)
+    {
+        return string.split(' ').join('');
+    }
+
+    </script>
+
+                <body onload="DrawCaptcha();">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="txtCaptcha"
+                                   style="background-color:#e7d16c; text-align:center; border:none;
+            font-weight:bold; font-family:Verdana; font-size:14px; width:234px;" />
+                            <input type="button" id="btnrefresh" value="Refresh" onclick="DrawCaptcha();" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="txtInput" placeholder="Please Type Captcha Here" style="width:234px;" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="Button1" type="button" value="Check" onclick="alert('Captcha Verification is : ' + ValidCaptcha());"/>
+                        </td>
+                    </tr>
+                </table>
 
             <div class="col-sm-12 form-group mb-0">
-                <button class="btn btn-success" type="submit">Next</button>  <button class="btn btn-success" type="reset">Reset </button>
-                <!--       <button class="btn btn-success">Submit</button>-->
+                <!-- <a href="form2.html"> <button class="btn btn-success" type="butt">Next</button>  </a> -->
+                <button class="btn btn-success" type="reset">Reset </button>
+                      <button class="btn btn-success" type="submit" >Next</button>
             </div>
         </div>
         </form>
