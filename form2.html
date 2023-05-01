@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <script src="script.js"></script>
-    <link rel="icon" href="/logo-2.ico" type="image/x-icon">
+    <link rel="icon" href="logo-2.ico" type="image/x-icon">
 
 
     <title>Registration Form 2 </title>
@@ -18,14 +18,15 @@
     <h2 class="text-center">Proforma No.2 </h2>
     <h2 class="toph2">-</h2>
     <div class="container">
-        <form id="form2" action="form2.php" method="post" >
+        <!-- <form id="form2" action="form2.php" method="post"> -->
+            <form id="form2" action="form2.php" method="post" enctype="multipart/form-data">
 <p style="color:red;"><b>* All the Fields are Required</b></p>
             <div class="row jumbotron">
             <div class="col-sm-12 form-group">
-               <label> Details of Schools & Jr. College run by <input type="text" name="schooljr" id="schooljr" required> Trust </label>
+               <label for="schooljr"> Details of Schools & Jr. College run by <input type="text" name="schooljr" id="schooljr" required> Trust </label>
                </div>
             <div class="col-sm-12 form-group"> 
-                <label for ="radio">Which Type of School it is?</label> <br>
+                <label for ="radio" >Which Type of School it is?</label> <br>
                 <label class="labelthin" ><input type="radio" name="school" value="primary" >Primary School</label> <br>
                 <label class="labelthin" ><input type="radio" name="school" value="high">High School</label><br>
                 <label class="labelthin" ><input type="radio" name="school" value="jr" >Jr. College</label>
@@ -33,7 +34,7 @@
 
               <div class="col-sm-12 form-group">
                 <label for="instructionschool">Which Medium Of Instruction of each school:	</label>
-                <input type="text" class="form-control" name="Instructionname" id="instschool" placeholder="English / Hindi/ Marathi / Urdu" required>
+                <input type="text" class="form-control" name="Instructionname" id="instschool" placeholder="English / Hindi/ Marathi / Urdu"  required>
             </div>
 
             <div class="col-sm-6 form-group">
@@ -44,20 +45,20 @@
             <div class="col-sm-6 form-group">
 
                 <label for="type">Type</label>
-                <select class="form-control custom-select browser-default" name="adid" required>
-                    <option value="Aided">Aided</option>
-                    <option value="Unaided">Unaided</option>
+                <select class="form-control custom-select browser-default" name="adid" >
+                    <option value="aided">Aided</option>
+                    <option value="unaided">Unaided</option>
                 </select>
 <!--                <label><input type="radio" name="aided" >Aided</label>-->
 <!--                <label><input type="radio" name="aided">Unaided</label>-->
             </div>
             <div class="col-sm-12 form-group">
                 <label for="strength">Class wise total strength of students:</label>
-                <input type="file" class="form-control" name="strength" id="strength" required>
+                <input type="file" class="form-control" name="strength" id="strength" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required >
             </div>
             <div class="col-sm-12 form-group">
                 <label for="teachingstaff">Details of each member of teaching Staff</label>
-                <input type="file" class="form-control" name="teachingstaff" id="teachingstaff" required>
+                <input type="file" class="form-control" name="teachingstaff" id="teachingstaff" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required >
             </div>
             <div class="col-sm-12 form-group">
                 <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
@@ -71,7 +72,7 @@
             <div class="col-sm-6 form-group">
 
                 <label for="type">Type</label>
-                <select class="form-control custom-select browser-default" name="adid2" required>
+                <select class="form-control custom-select browser-default" name="adid2" >
                     <option value="Aided">Aided</option>
                     <option value="Unaided">Unaided</option>
                 </select>
@@ -80,11 +81,11 @@
             </div>
             <div class="col-sm-12 form-group">
                 <label for="secstrength">Class wise total strength of students:</label>
-                <input type="file" class="form-control" name="secstrength" id="secstrength" required>
+                <input type="file" class="form-control" name="secstrength" id="secstrength" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required >
             </div>
             <div class="col-sm-12 form-group">
                 <label for="secteachingstaffsec">Details of each member of teaching Staff</label>
-                <input type="file" class="form-control" name="secteachingstaffsec" id="secteachingstaffsec" required>
+                <input type="file" class="form-control" name="secteachingstaffsec" id="secteachingstaffsec" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc"  required>
             </div>
             <div class="col-sm-12 form-group">
                 <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
@@ -98,7 +99,7 @@
             <div class="col-sm-6 form-group">
 
                 <label for="type">Type</label>
-                <select class="form-control custom-select browser-default" name="adid3" required>
+                <select class="form-control custom-select browser-default" name="adid3" >
                     <option value="Aided">Aided</option>
                     <option value="Unaided">Unaided</option>
                 </select>
@@ -107,11 +108,11 @@
             </div>
             <div class="col-sm-12 form-group">
                 <label for="jrstrength">Class wise total strength of students:</label>
-                <input type="file" class="form-control" name="jrstrength" id="jrstrength" required>
+                <input type="file" class="form-control" name="jrstrength" id="jrstrength" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required>
             </div>
             <div class="col-sm-12 form-group">
                 <label for="jrteachingstaff">Details of each member of teaching Staff</label>
-                <input type="file" class="form-control" name="jrteachingstaff" id="jrteachingstaff" required>
+                <input type="file" class="form-control" name="jrteachingstaff" id="jrteachingstaff" accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required>
             </div>
             <div class="col-sm-12 form-group">
                 <b><label>i.e. Name,age,Qualification,Teaching Experience and computer qualification if any to be shown separetely</label> </b>
@@ -126,7 +127,12 @@
 
 
     <div class="col-sm-12 form-group mb-0">
-       <a href="form3.html"> <button class="btn btn-success" type="button" >Next</button> </a>
+       <!--<a href="form1.html"> <button class="btn btn-success" type="button" >Back</button> </a> -->
+        <button class="btn btn-success" type="submit" >Next</button>       
+        <button class="btn btn-success" type="reset" >Reset</button>
+
+
+
        <!-- <button class="btn btn-success">Submit</button> -->
     </div>
     
