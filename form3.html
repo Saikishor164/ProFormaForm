@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <script src="script.js"></script>
-    <link rel="icon" href="/logo-2.ico" type="image/x-icon">
+    <link rel="icon" href="logo-2.ico" type="image/x-icon">
+
+
     <title>Registration Form 3 </title>
 </head>
 <body>
@@ -18,7 +20,8 @@
 <div class="container">
     <center><p style="font-weight:bold; font-size:16pt;">Details showing Computer Education related infrastructure, Equipment etc.</p></center>
     <p style="color:red;"><b>* All the Fields are Required</b></p>
-    <form id="form3">
+        <!-- <form id="form2" action="form3.php" method="post"> -->
+            <form id="form3" action="form3.php"  method="post">
         <div class="row jumbotron">
             <div class="col-sm-12 form-group">
                 <label for="Computerlab">Whether school has Computer Lab </label>
@@ -62,7 +65,7 @@
                 
             </div>
             <div class="col-sm-8 form-group">    
-                <input type="file" class="form-controltt" name="copyoftimetable" id="copyoftable" placeholder="(Copy of Time Table To Be E)" required>
+                <input type="file" class="form-controltt" name="copyoftimetable" id="copyoftable" placeholder="(Copy of Time Table To Be E)"  accept=".xlsb, .xlsm, .xlsx, .xltx, .xltm, .xls, .xlt, .xls, .xml, .xml, .xlam, .xla, .xlw, .xlr, .txt, .csv, .dif, .slk, .pdf, .doc" required>
 
             </div>
             <div class="col-sm-12 form-group">
@@ -116,10 +119,11 @@
                 <input type="date" class="form-control" name="date" id="date" required>
             </div>
             
-          
                 <br>
             <div class="col-sm-12 form-group mb-0">
-                <button class="btn btn-success">Submit</button>
+                <!-- <a href="form2.html"> <button class="btn btn-success" type="button" >Back</button> </a> -->
+                <button class="btn btn-success" type="submit">Submit</button>
+                 
             </div>
 
         </div>
