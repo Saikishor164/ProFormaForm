@@ -1,6 +1,4 @@
 <?php
-
-
     // Get form data
     $schooljr = $_POST["schooljr"];
     $school = $_POST["school"];
@@ -39,7 +37,6 @@ if(isset($_FILES["strength"])) {
    echo "No file was selected for upload. ";
    
 }
-
 if(isset($_FILES["teachingstaff"])) {
     $target_dir = "./uploads/each-member-of-teaching-Staff/";
     $target_file = $target_dir . basename($_FILES["teachingstaff"]["name"]);
@@ -109,7 +106,6 @@ if(isset($_FILES["teachingstaff"])) {
  } else {
     echo "No file was selected for upload.";
  }
-
 
 
 //    if(isset($_FILES["strength"])) {
