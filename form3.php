@@ -25,6 +25,20 @@
 
     
 
+   if(isset($_FILES["copyoftimetable"])) {
+    $target_dir = "./uploads/copy-of-time-table/";
+    $target_file = $target_dir . basename($_FILES["copyoftimetable"]["name"]);
+    
+    // Try to upload file
+    if (move_uploaded_file($_FILES["copyoftimetable"]["tmp_name"], $target_file)) {
+       //echo "The file ". htmlspecialchars( basename( $_FILES["jrteachingstaff"]["name"])). " has been uploaded.<br><br>";
+    } else {
+       echo "Sorry, there was an error uploading your file.";
+    }
+ } else {
+    echo "No file was selected for upload.";
+ }
+
     
     if(empty($errors)) {
         // Connect to database
@@ -41,9 +55,10 @@
 
         // Insert data into database
         $sql = " INSERT INTO pofoma3 (`computerlab`, `computerdetailsname`, `intenet`, `connectivity`, `electricity`, `upsbattery`, `upscapacity`, `compteachtable`, `copyoftimetable`, `yesno`, `compcourse`, `exampass`, `equivalentto`, `teacherisnotavailable`, `hallforcomputerlab`, `sizeofhall`, `hallsecured`, `date`) 
-                VALUES ('$computerlab',' $computerdetailsname', '$intenet', '$connectivity', '$electricity', '$upsbattery',' $upscapacity', '$compteachtable',' $copyoftimetable',' $yesno',' $compcourse',' $exampass', '$equivalentto',' $teacherisnotavailable',' $hallforcomputerlab',' $sizeofhall', '$hallsecured',' $date')";
+                VALUES ('$computerlab',' $computerdetailsname', '$intenet', '$connectivity', '$electricity', '$upsbattery',' $upscapacity', '$compteachtable', '$copyoftimetable', $yesno',' $compcourse',' $exampass', '$equivalentto',' $teacherisnotavailable',' $hallforcomputerlab',' $sizeofhall', '$hallsecured',' $date')";
 
         if ($conn->query($sql) === TRUE) {
+            
             echo " thank you"; 
             
         } else {
@@ -54,9 +69,18 @@
     } else {
         // If there are errors, display them to the user
         foreach($errors as $error) {
-            echo "<p>$error</p>";
+            echo "<p>$error</p><br>";
         }
     }
+
+    // Define your array
+    $myArray = array ("$computerlab, $computerdetailsname, $intenet, $connectivity, $electricity, $upsbattery, $upscapacity, $compteachtable,$copyoftimetable,$yesno, $compcourse, $exampass, $equivalentto, $teacherisnotavailable, $hallforcomputerlab, $sizeofhall, $hallsecured, $date");
+    
+    // Convert the array to a string first
+    $stringVersion = implode(',', $myArray);
+    
+    // Print the string version of the array
+    echo "My array is: " . $stringVersion;
 
 
 ?>
