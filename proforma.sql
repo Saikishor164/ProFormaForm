@@ -154,7 +154,6 @@ ALTER TABLE `pofoma3`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
 --
 -- AUTO_INCREMENT for table `pofoma1`
 --
