@@ -43,7 +43,7 @@
           <a class="navbar-brand mr-5" href="index.html">
             <img src="images/logo.png" alt="">
             <span>
-              Fregg
+              Dr. P.A. Inamdar Computer Lab
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -67,16 +67,16 @@
                       <h1>
                         Welcome To <br>
                         <span>
-                          Content Writing Services
+                        Dr. P.A Inamdar Computer Lab
                         </span>
                       </h1>
                       <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking
+                      Profoma to be submitted for the establishment of
+Dr. P.A Inamdar Computer Lab
                       </p>
                       <div class="btn-box">
                         <a href="form1.html" class="btn-1">
-                          Contact Us
+                           Proforma Form no. 1
                         </a>
                       </div>
                     </div>
