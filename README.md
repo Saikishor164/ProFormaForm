@@ -60,7 +60,6 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          
         </nav>
       </div>
     </header>
@@ -68,7 +67,6 @@
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -97,29 +95,12 @@
               </div>
             </div>
           </div>
-          
         </div>
-        <!-- <div class="custom_carousel-control">
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-          </a>
-        </div> -->
       </div>
     </section>
     <!-- end slider section -->
   </div>
-
-
-
-
   </section>
-
-
-
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 
