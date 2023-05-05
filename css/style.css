@@ -167,7 +167,7 @@ a:focus {
 .slider_section .detail-box .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #e93f1a;
+  background-color: #1a43e9;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -177,8 +177,8 @@ a:focus {
 
 .slider_section .detail-box .btn-box a:hover {
   background-color: transparent;
-  border-color: #e93f1a;
-  color: #e93f1a;
+  border-color: #1a43e9;
+  color: #1a43e9;
 }
 
 .slider_section #carouselExampleIndicators {
