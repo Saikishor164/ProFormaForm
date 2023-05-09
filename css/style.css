@@ -167,18 +167,19 @@ a:focus {
 .slider_section .detail-box .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #1a43e9;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
   border-radius: 5px;
 }
+}
 
 .slider_section .detail-box .btn-box a:hover {
-  background-color: transparent;
-  border-color: #1a43e9;
-  color: #1a43e9;
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
 }
 
 .slider_section #carouselExampleIndicators {
