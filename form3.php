@@ -1,6 +1,4 @@
 <?php
-
-
     // Get form data
     $computerlab = $_POST["computerlab"];
     $computerdetailsname = $_POST["computerdetailsname"];
