@@ -1,8 +1,4 @@
-
-
 <?php
-
-
 $Dedutrustname = $_POST["Dedutrustname"];
 $educationalname = $_POST["educationalname"];
 $educationaladdress = $_POST["educationaladdress"];
