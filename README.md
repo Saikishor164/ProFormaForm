@@ -1,8 +1,4 @@
 
-
-
-
-
 <!-- <center>
 <h1>   Proforma to be submitted for to establish </h1>
 <h2>   P.A Inamdar Computer  </h2>
