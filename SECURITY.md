@@ -1,5 +1,9 @@
+
+
+
 # Security Release Process
 Harbor is a large growing community devoted in creating a private enterprise-grade registry for all your cloud native assets. The community has adopted this security disclosure and response policy to ensure we responsibly handle critical issues
+
 
 ## Supported Versions
 The Harbor project maintains release branches for the three most recent minor releases. Applicable fixes, including security fixes, may be backported to those three release branches, depending on severity and feasibility. Please refer to [RELEASES.md](https://github.com/goharbor/harbor/blob/main/RELEASES.md) for details.
