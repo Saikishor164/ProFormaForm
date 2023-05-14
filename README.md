@@ -26,7 +26,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Fregg</title>
+  <title>Computer Lab</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
