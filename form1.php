@@ -1,3 +1,4 @@
+
 <?php
 $Dedutrustname = $_POST["Dedutrustname"];
 $educationalname = $_POST["educationalname"];
