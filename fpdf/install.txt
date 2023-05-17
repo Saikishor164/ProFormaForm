@@ -1,5 +1,6 @@
 The FPDF library is made up of the following elements:
 
+
 - the main file, fpdf.php, which contains the class
 - the font definition files located in the font directory
 
