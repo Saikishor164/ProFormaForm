@@ -1,3 +1,4 @@
+
 <?php    // Get form data
     $schooljr = $_POST["schooljr"];
     $school = $_POST["school"];
